@@ -35,5 +35,44 @@ O processo se repete até encontrar o valor ou até que a lista restante esteja 
 🔄 **Lista Ordenada:** Requer que os dados estejam previamente ordenados.  
 🎲 **Acesso Aleatório:** É mais eficiente em estruturas como arrays, onde o acesso a qualquer índice é instantâneo.
 
+--- 
+
+# 📌 Ordenação por Seleção (Selection Sort)
+
+A **ordenação por seleção** é um algoritmo simples e intuitivo que ordena uma lista encontrando repetidamente o menor (ou maior) elemento e movendo-o para a posição correta.
+
+---
+
+## 🛠 Como Funciona?
+1. **Encontra o menor elemento** da lista.
+2. **Move esse elemento** para o início da lista ordenada.
+3. **Repete o processo** para o restante da lista até que todos os elementos estejam ordenados.
+
+---
+
+## ⏳ Complexidade
+- **Melhor caso:** O(n²)
+- **Pior caso:** O(n²)
+- **Média:** O(n²)
+- **Espaço:** O(1) (Ordenação in-place)
+
+📌 Como precisa comparar e trocar elementos repetidamente, **não é eficiente para listas grandes**.
+
+---
+
+## ✅ Vantagens
+✔️ Fácil de entender e implementar.  
+✔️ Não requer memória extra significativa.  
+✔️ Útil para listas pequenas ou quase ordenadas.
+
+## ❌ Desvantagens
+❌ Ineficiente para grandes volumes de dados.  
+❌ Tem desempenho pior que outros algoritmos como QuickSort e MergeSort.
+
+---
+
+## 🏗️ Caso de Uso
+Apesar de não ser o mais eficiente, o Selection Sort pode ser útil em **sistemas embarcados** e **cenários de hardware limitado**, onde a simplicidade e o baixo consumo de memória são mais importantes que a velocidade.
+
 ---
 
