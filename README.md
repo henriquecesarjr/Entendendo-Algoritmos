@@ -76,3 +76,25 @@ Apesar de não ser o mais eficiente, o Selection Sort pode ser útil em **sistem
 
 ---
 
+# 🔄 Recursão em Algoritmos  
+
+## O que é Recursão?  
+A **recursão** é uma técnica fundamental em algoritmos, onde uma função chama a si mesma para resolver um problema menor do mesmo tipo. Esse conceito segue o princípio **"dividir para conquistar"**, quebrando problemas complexos em partes menores até atingir um caso base simples de resolver.
+
+## Estrutura de uma Função Recursiva  
+Uma função recursiva geralmente tem duas partes principais:  
+
+1. **Caso Base**: Define quando a recursão deve parar.  
+2. **Passo Recursivo**: A função chama a si mesma, reduzindo o problema até atingir o caso base.  
+
+### 📌 Exemplo Clássico: Fatorial de um Número  
+
+O fatorial de um número \( n! \) é definido como:  
+\[
+n! = n \times (n - 1) \times (n - 2) \times ... \times 1
+\]
+Ou, de forma recursiva:  
+\[
+n! = n \times (n - 1)!
+\]
+
