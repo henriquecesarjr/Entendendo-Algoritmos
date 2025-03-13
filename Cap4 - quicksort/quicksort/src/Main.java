@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
@@ -12,24 +13,28 @@ public class Main {
     public static ArrayList<Integer> quicksort(ArrayList<Integer> list) {
         if (list.size() < 2) {
             return list;
-        }else {
-            Integer pivot = list.getFirst();
-            ArrayList<Integer> minors = new ArrayList<>();
-            ArrayList<Integer> bigger = new ArrayList<>();
-
-            for (Integer item : list) {
-                if (item < pivot) {
-                    minors.add(item);
-                } else if (item > pivot) {
-                    bigger.add(item);
-                }
-            }
-
-            ArrayList<Integer> result = new ArrayList<>(quicksort(minors));
-            result.add(pivot);
-            result.addAll(quicksort(bigger));
-
-            return result;
         }
+
+        Random rand = new Random();
+        Integer pivot = list.get(rand.nextInt(list.size()));
+        ArrayList<Integer> minors = new ArrayList<>();
+        ArrayList<Integer> equals = new ArrayList<>();
+        ArrayList<Integer> bigger = new ArrayList<>();
+
+        for (Integer item : list) {
+            if (item < pivot) {
+                minors.add(item);
+            } else if (item > pivot) {
+                bigger.add(item);
+            } else {
+                equals.add(item);
+            }
+        }
+
+        ArrayList<Integer> result = new ArrayList<>(quicksort(minors));
+        result.addAll(equals);
+        result.addAll(quicksort(bigger));
+
+        return result;
     }
 }
