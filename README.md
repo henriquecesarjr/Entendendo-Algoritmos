@@ -98,3 +98,23 @@ Ou, de forma recursiva:
 n! = n \times (n - 1)!
 \]
 
+# 🔥 QuickSort: Ordenação Rápida e Eficiente  
+
+O **QuickSort** é um dos algoritmos de ordenação mais eficientes, utilizando a estratégia de **Dividir para Conquistar**. Ele funciona escolhendo um **pivô**, reorganizando a lista para que elementos menores fiquem à esquerda e maiores à direita, e aplicando esse processo recursivamente.  
+
+## 📌 Como funciona?  
+1. **Escolha do pivô**: Um elemento da lista é escolhido como referência (pode ser o primeiro, o último, um aleatório ou a mediana).  
+2. **Particionamento**: Os elementos menores que o pivô vão para a esquerda, e os maiores para a direita.  
+3. **Recursão**: O mesmo processo é aplicado às duas sublistas até que a lista esteja ordenada.  
+
+## 🚀 Complexidade  
+- **Melhor caso**: O( *n* log *n* ) → Quando o pivô divide a lista de forma equilibrada.  
+- **Pior caso**: O( *n²* ) → Se o pivô for mal escolhido e gerar partições desbalanceadas.  
+- **Caso médio**: O( *n* log *n* ) → Funciona bem na maioria dos cenários.  
+
+## 🎯 Vantagens e Desvantagens  
+✅ Rápido na prática para grandes conjuntos de dados.  
+✅ Funciona bem com estruturas que permitem acesso aleatório.  
+❌ Pior caso pode ser ineficiente sem otimizações.  
+❌ Não é **estável**, ou seja, não mantém a ordem relativa de elementos iguais.  
+
