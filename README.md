@@ -118,3 +118,28 @@ O **QuickSort** é um dos algoritmos de ordenação mais eficientes, utilizando 
 ❌ Pior caso pode ser ineficiente sem otimizações.  
 ❌ Não é **estável**, ou seja, não mantém a ordem relativa de elementos iguais.  
 
+# 🔍 Tabelas Hash
+
+Uma **tabela hash** é uma estrutura de dados que associa chaves a valores, permitindo buscas extremamente rápidas. Ela é baseada em uma **função hash**, que converte a chave em um índice dentro de um array, onde o valor correspondente será armazenado.
+
+## 🛠️ Como funciona?
+1. **Hashing**: A chave é convertida em um índice usando uma função hash.
+2. **Inserção**: O valor é armazenado no índice gerado.
+3. **Busca**: Para encontrar um valor, basta calcular o índice novamente.
+4. **Tratamento de colisões**: Se duas chaves geram o mesmo índice, técnicas como **encadeamento** ou **endereçamento aberto** são usadas para armazenar os valores corretamente.
+
+## ⏳ Complexidade de Tempo
+| Operação      | Melhor Caso | Caso Médio | Pior Caso (com colisões) |
+|--------------|------------|------------|---------------------------|
+| Busca        | O(1)       | O(1)       | O(n)                      |
+| Inserção     | O(1)       | O(1)       | O(n)                      |
+| Remoção      | O(1)       | O(1)       | O(n)                      |
+
+## 🚀 Vantagens
+✅ Acesso rápido aos dados (tempo constante O(1) na maioria dos casos).  
+✅ Ideal para implementar dicionários e caches.  
+
+## ⚠️ Desvantagens
+❌ Pode haver colisões, exigindo tratamento.  
+❌ O desempenho depende da qualidade da função hash.  
+
